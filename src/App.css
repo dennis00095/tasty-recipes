@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+	min-height: auto;
+	background-image: linear-gradient(
+		to right,
+		#e4afcb 0%,
+		#b8cbb8 0%,
+		#b8cbb8 0%,
+		#e2c58b 30%,
+		#c2ce9c 64%,
+		#7edbdc 100%
+	);
+}
+.search-form {
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+	width: 50%;
+	border: none;
+	padding: 10px;
+	font-style: italic;
+	color: rgb(152, 216, 25);
+	background-color: rgb(179, 129, 121);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-button {
+	background-color: rgb(214, 165, 31);
+	border: none;
+	padding: 10px 20px;
+	color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.recipes {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-left: 100px;
+	margin-right: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.header {
+	text-align: center;
+	font-style: italic;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 0px;
+	color: rgb(184, 112, 184);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerone {
+	text-align: center;
+	font-style: italic;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
